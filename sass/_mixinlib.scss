@@ -1,0 +1,145 @@
+// /* Metis Mixin Library CSS3 */
+
+// /* *** Border Radius *** */
+
+@mixin border-radius($border-rad) {
+	-webkit-border-radius: $border-rad;
+	-moz-border-radius: $border-rad;
+	border-radius: $border-rad;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	behavior: url(./jquery/css3/PIE.htc);
+}
+
+
+// /* Example --> .element { @include border-radius(4px); } */
+
+@mixin border-top-left-radius($border-tl-rad) {
+	-webkit-border-top-left-radius: $border-tl-rad;
+	-moz-border-radius-topleft: $border-tl-rad;
+	border-top-left-radius: $border-tl-rad;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+// /* Example --> .element { @include border-top-left-radius(4px); } */
+
+@mixin border-top-right-radius($border-tr-rad) {
+	-webkit-border-top-right-radius: $border-tr-rad;
+	-moz-border-radius-topright: $border-tr-rad;
+	border-top-right-radius: $border-tr-rad;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+// /* Example --> .element { @include border-top-right-radius(4px); } */
+
+@mixin border-bottom-right-radius($border-br-rad) {
+	-webkit-border-bottom-right-radius: $border-br-rad;
+	-moz-border-radius-bottomright: $border-br-rad;
+	border-bottom-right-radius: $border-br-rad;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+// /* Example --> .element { @include border-bottom-right-radius(4px); } */
+
+@mixin border-bottom-left-radius($border-bl-rad) {
+	-webkit-border-bottom-left-radius: $border-bl-rad;
+	-moz-border-radius-bottomleft: $border-bl-rad;
+	border-bottom-left-radius: $border-bl-rad;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+// /* Example --> .element { @include border-bottom-left-radius(4px); } */
+
+// /* ============================================================================================== */
+
+// /* Box Shadow */
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }
+	
+// /* Example --> .element { @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075)); */	
+	
+// /* ============================================================================================== */
+
+
+
+// /* Linear / Vertical Gradient */
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
+// /* Example --> .element { @include linear-gradient(#000, #BADA55); // Stick in your favourite HEX colours } */
+
+// /* ============================================================================================== */
+
+
+
+// /*  Rem Calculator */
+// /* -----------------	This mixin was found at this address -->  http://paulwp.com/useful-sass-mixins-for-working-with-rem-units/ */
+
+
+@mixin rem($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $default-fontSize / 1rem; // /*$default-fontSize = 16px */
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem; }
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: unquote("");
+    @each $value in $px-values {
+      // If the value is zero or a string or a color, return unchanged input
+      @if $value == 0 or type-of($value) == "string" or type-of($value) == "color" {
+        $rem-values: append($rem-values, $value); }
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem); } }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values; } }
+
+// /* Example --> .element { @include rem('padding',10px 0 15px 5px); } */
+
+// /* ============================================================================================== */
+
+
+@mixin rgba-background($property, $color, $opacity) {
+    position: relative;
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+// /* Example --> .element { @include transition(all, 0.2s, ease-in-out); }
+
+// /* ============================================================================================== */

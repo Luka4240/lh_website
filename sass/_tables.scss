@@ -1,0 +1,193 @@
+// /* Tables for Mooi */
+
+.mooi-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    border: 1px solid #cbcbcb;
+	@include rem('margin',5px 0);
+}
+
+.mooi-table th {
+	font-weight:bold;
+}
+.mooi-table td,
+.mooi-table th {
+    border-left: 1px solid #cbcbcb;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    @include rem('padding', 6px 12px); /* cell padding */
+	background-color:#eee;
+}
+.mooi-table td:first-child,
+.mooi-table th:first-child {
+    border-left-width: 0;
+}
+
+.mooi-table thead {
+    background: #e0e0e0;
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/*
+striping:
+   even - #fff (white)
+   odd  - #f2f2f2 (light gray)
+*/
+.mooi-table td {
+    background-color: transparent;
+}
+.mooi-table-odd td {
+    background-color: #f2fdff;
+}
+
+/* nth-child selector for modern browsers */
+.mooi-table-zebra tr:nth-child(2n-1) td {
+    background-color: #f2fdff;
+}
+
+/* Borders All Table */
+.mooi-table-borders-all td, .mooi-table-borders-all th {
+    border-bottom: 1px solid #cbcbcb;
+}
+.mooi-table-border-all tbody > tr:last-child td,
+.mooi-table-borders-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+/* Horizontal Borders Table */
+
+.mooi-table-borders-horizontal td,
+.mooi-table-borders-horizontal th {
+    border-width: 0 0 1px 0;
+    border-bottom: 1px solid #cbcbcb;
+}
+.mooi-table-borders-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+
+
+// /* Responsive Mooi Tables */
+
+.mooi-responsive-table table { 
+  width: 90%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+.mooi-responsive-table tr:nth-of-type(odd) { 
+  background: #f2fdff; 
+}
+.mooi-responsive-table th { 
+  background: #eee; 
+  color: #000; 
+  font-weight: bold;
+  border-top:1px solid #cbcbcb 
+}
+.mooi-responsive-table td, .mooi-responsive-table th { 
+  padding: 6px; 
+  text-align: left; 
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	.mooi-responsive-table table, .mooi-responsive-table thead, .mooi-responsive-table tbody, .mooi-responsive-table th, .mooi-responsive-table td, .mooi-responsive-table tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.mooi-responsive-table th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		border:none;
+	}
+	
+	
+	.mooi-responsive-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		border:none;
+	}
+	
+	.mooi-responsive-table tr {  }
+	
+	.mooi-responsive-table td { 
+		/* Behave  like a "row" */
+		display:inline-block;
+		border: none;
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	.mooi-responsive-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		@include rem('padding',6px 10px 0 6px);
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	.mooi-responsive-table td:nth-of-type(1):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(2):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(3):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(4):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(5):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(6):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(7):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(8):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(9):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(10):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(11):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(12):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(13):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(14):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(15):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(16):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(17):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(18):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(19):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(20):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(21):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(22):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(23):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(24):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(25):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(26):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(27):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(28):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(29):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(30):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(31):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(32):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(33):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(34):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(35):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(36):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(37):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(38):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(39):before { content: attr(data-value) ": "; }
+	.mooi-responsive-table td:nth-of-type(40):before { content: attr(data-value) ": "; }
+
+}

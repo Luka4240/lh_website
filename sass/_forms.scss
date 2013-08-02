@@ -1,0 +1,230 @@
+/* ==== FORMS ==== */
+.mooi-form label {
+	cursor:default;
+	color:rgba(#444444,1);
+	@include rem('font-size',14px);
+}
+
+.mooi-form input[type="text"],
+.mooi-form input[type="password"],
+.mooi-form input[type="email"],
+.mooi-form input[type="url"],
+.mooi-form input[type="date"],
+.mooi-form input[type="month"],
+.mooi-form input[type="time"],
+.mooi-form input[type="datetime"],
+.mooi-form input[type="datetime-local"],
+.mooi-form input[type="week"],
+.mooi-form input[type="number"],
+.mooi-form input[type="search"],
+.mooi-form input[type="tel"],
+.mooi-form input[type="color"],
+.mooi-form select,
+.mooi-form textarea {
+	@include rem('padding',8px 5px);
+	@include rem('margin-bottom',5px);
+	@include rem('font-size', 14px);
+    @include border-radius(4px);
+    border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd inset;
+	-webkit-transition: 0.3s linear ease-in-out;
+    -moz-transition: 0.3s linear ease-in-out;
+    -ms-transition: 0.3s linear ease-in-out;
+    -o-transition: 0.3s linear ease-in-out;
+    transition: 0.3s linear ease-in-out;
+    -webkit-font-smoothing: antialiased;
+	color: #666;
+	outline: none;
+}
+.mooi-form input[type="text"]:focus,
+.mooi-form input[type="password"]:focus,
+.mooi-form input[type="email"]:focus,
+.mooi-form input[type="url"]:focus,
+.mooi-form input[type="date"]:focus,
+.mooi-form input[type="month"]:focus,
+.mooi-form input[type="time"]:focus,
+.mooi-form input[type="datetime"]:focus,
+.mooi-form input[type="datetime-local"]:focus,
+.mooi-form input[type="week"]:focus,
+.mooi-form input[type="number"]:focus,
+.mooi-form input[type="search"]:focus,
+.mooi-form input[type="tel"]:focus,
+.mooi-form input[type="color"]:focus,
+.mooi-form select:focus,
+.mooi-form textarea:focus {
+    border: 1px solid #51A7E8;
+	box-shadow: 0 0 4px #51a7e8, 
+				0 1px 2px #eee inset;
+}
+.mooi-form input[type="checkbox"],
+.mooi-form input[type="radio"] {
+	
+}
+.mooi-form-inline { @if $inlineFormWidth == 0 { width:100%; } @else {width:$inlineFormWidth;} }
+.mooi-form-inline label{
+	display:inline;
+	@if $inlineLabelWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineLabelWidth;}
+}
+.mooi-form-inline input[type="text"],
+.mooi-form-inline input[type="password"],
+.mooi-form-inline input[type="email"],
+.mooi-form-inline input[type="url"],
+.mooi-form-inline input[type="date"],
+.mooi-form-inline input[type="month"],
+.mooi-form-inline input[type="time"],
+.mooi-form-inline input[type="datetime"],
+.mooi-form-inline input[type="datetime-local"],
+.mooi-form-inline input[type="week"],
+.mooi-form-inline input[type="number"],
+.mooi-form-inline input[type="search"],
+.mooi-form-inline input[type="tel"],
+.mooi-form-inline input[type="color"],
+.mooi-form-inline select,
+.mooi-form-inline textarea {
+    display: inline;
+ 	@if $inlineInputWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineInputWidth;}
+}
+
+.mooi-form-inline input[type="checkbox"],
+.mooi-form-inline input[type="radio"] {
+	display:inline;
+	@inlcude rem('padding',2px);
+}
+.mooi-form-inline input[type="button"] { @include rem('margin',0 0 0 10px); }
+
+
+.mooi-form-column { @if $inlineFormWidth == 0 { width:100%; } @else {width:$inlineFormWidth;} }
+.mooi-form-column label{
+	display:block;
+	@if $inlineLabelWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineLabelWidth;}
+}
+.mooi-form-column input[type="text"],
+.mooi-form-column input[type="password"],
+.mooi-form-column input[type="email"],
+.mooi-form-column input[type="url"],
+.mooi-form-column input[type="date"],
+.mooi-form-column input[type="month"],
+.mooi-form-column input[type="time"],
+.mooi-form-column input[type="datetime"],
+.mooi-form-column input[type="datetime-local"],
+.mooi-form-column input[type="week"],
+.mooi-form-column input[type="number"],
+.mooi-form-column input[type="search"],
+.mooi-form-column input[type="tel"],
+.mooi-form-column input[type="color"],
+.mooi-form-column select,
+.mooi-form-column textarea {
+    display: block;
+ 	@if $inlineInputWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineInputWidth;}
+}
+
+.mooi-form-column input[type="checkbox"],
+.mooi-form-column input[type="radio"] {
+	display:inline-block;
+	@include rem('padding',2px);
+	
+}
+.mooi-form-column button {	@include rem('margin',0 0 0 10px); }
+
+.mooi-form-aligned { @if $alignedFormWidth == 0 { width:100%; } @else {width:$alignedFormWidth;} }
+.mooi-form-aligned label{
+	text-align:right;
+	display:inline-block;
+	@if $alignedLabelWidth == 0 {
+		width:100%;
+	}
+	@else {width:$alignedLabelWidth;}
+}
+.mooi-form-aligned input[type="text"],
+.mooi-form-aligned input[type="password"],
+.mooi-form-aligned input[type="email"],
+.mooi-form-aligned input[type="url"],
+.mooi-form-aligned input[type="date"],
+.mooi-form-aligned input[type="month"],
+.mooi-form-aligned input[type="time"],
+.mooi-form-aligned input[type="datetime"],
+.mooi-form-aligned input[type="datetime-local"],
+.mooi-form-aligned input[type="week"],
+.mooi-form-aligned input[type="number"],
+.mooi-form-aligned input[type="search"],
+.mooi-form-aligned input[type="tel"],
+.mooi-form-aligned input[type="color"],
+.mooi-form-aligned select,
+.mooi-form-aligned textarea {
+    display: inline;
+ 	@if $alignedInputWidth == 0 {
+		width:100%;
+	}
+	@else {width:$alignedInputWidth;}
+	@include rem('margin-left',2px);
+}
+
+.mooi-form-aligned input[type="checkbox"],
+.mooi-form-aligned input[type="radio"] {
+	@include rem('padding',none);
+	display:inline-block;
+}
+.mooi-form-aligned-right {
+	margin-left:$alignedLabelWidth + 0px;
+}
+.mooi-form-aligned input[type="button"] {
+	margin-left:5px;
+}
+.mooi-form-aligned-checkbox {
+	width:$alignedCheckboxWidth!important;
+	text-align:left;
+}
+
+ @media only screen and (max-width: 480px) {
+    
+.mooi-form-aligned { @if $inlineFormWidth == 0 { width:100%; } @else {width:$inlineFormWidth;} }
+.mooi-form-aligned label{
+	display:inline-block;
+    text-align:left;                        
+}
+.mooi-form-aligned input[type="text"],
+.mooi-form-aligned input[type="password"],
+.mooi-form-aligned input[type="email"],
+.mooi-form-aligned input[type="url"],
+.mooi-form-aligned input[type="date"],
+.mooi-form-aligned input[type="month"],
+.mooi-form-aligned input[type="time"],
+.mooi-form-aligned input[type="datetime"],
+.mooi-form-aligned input[type="datetime-local"],
+.mooi-form-aligned input[type="week"],
+.mooi-form-aligned input[type="number"],
+.mooi-form-aligned input[type="search"],
+.mooi-form-aligned input[type="tel"],
+.mooi-form-aligned input[type="color"],
+.mooi-form-aligned select,
+.mooi-form-aligned textarea {
+    display: block;
+ 	@if $inlineInputWidth == 0 {
+		width:100%;
+	}
+	@else {width:$inlineInputWidth;}
+}
+
+.mooi-form-aligned input[type="checkbox"],
+.mooi-form-aligned input[type="radio"] {
+	display:inline-block;
+	@include rem('padding',2px);
+	
+}
+.mooi-form-aligned button {	@include rem('margin',0 0 0 10px); }                
+.mooi-form-aligned-right {
+	margin-left:0;
+}                    
+}

@@ -1,0 +1,57 @@
+html {
+	font-size:$default-fontSize; }
+body {
+	font-family: $body-font; 
+	font-size-adjust:0.5; 
+	font-weight:300; 
+	font-style:normal;
+	line-height:1.5rem;
+	color:$fontColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font; 
+	font-weight:normal; 
+	font-style:normal;
+	cursor:default; }
+	
+h1 {@include rem('font-size',$h1Size);
+	@include rem('line-height', $h1Size * 1.25);
+	@include rem('padding',15px 0 25px 0); }
+h2 {@include rem('font-size',$h2Size);
+	@include rem('line-height', $h2Size * 1.25);
+	@include rem('padding',15px 0 25px 0); }	
+h3 {@include rem('font-size',$h3Size);
+	@include rem('line-height', $h3Size * 1.25);
+	@include rem('padding',12px 0 20px 0); }	
+h4 {@include rem('font-size',$h4Size);
+	@include rem('line-height', $h4Size * 1.25);
+	@include rem('padding',10px 0 18px 0); }	
+h5 {@include rem('font-size',$h5Size);
+	@include rem('line-height', $h5Size * 1.25);
+	@include rem('padding',8px 0 15px 0); }	
+h6 {@include rem('font-size',$h6Size);
+	@include rem('line-height', $h6Size * 1.25);
+	@include rem('padding',8px 0 14px 0); }	
+
+p {font-size:$default-fontSize;
+	@include rem('padding', 5px 0); }
+	
+a:link { text-decoration:none;color:$linkColor;}
+a:visited { text-decoration:none;color:$linkVisited;}
+a:hover, a:focus {text-decoration:underline; color:$linkHover;}	
+a:active {text-decoration:none;color:$linkActive;}
+
+blockquote {
+	font-size:$default-fontSize;
+	font-style: italic;
+	@include rem('margin-left',15px);
+	@include rem('padding',10px 0px 10px 10px);
+	border-left:1px solid #ddd;
+	background-color:#eee;
+	@include rem('text-indent',20px);
+}
+q {
+	@include rem('text-indent',10px);
+	font-style:italic;
+}

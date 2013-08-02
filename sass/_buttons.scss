@@ -1,0 +1,111 @@
+// /* ---- Buttons for Mooi ---- */
+
+.mooi-button, .mooi-button:visited, a.mooi-button, a.mooi-button:visited, .mooi-button a:link, .mooi-button a:visited, ,mooi-button a {
+	font-size: $default-fontSize;
+	*font-size:90%; /* IE fix */
+	*overflow: visible; /*IE Fix */
+	@include rem('padding',8px 24px 8px 24px);
+	@include rem('margin-top',2px);
+	@include rem('margin-bottom',2px);
+	color:#222;
+	color: rgba(0,0,0,0.7);
+	border: 1px solid #999;
+	border: none rgba(0,0,0,0);
+	background-color: #E6E6E6;
+	text-decoration:none;
+	@include border-radius($button-radius);
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: 0.1s linear -webkit-box-shadow;/* Transitions */
+    -moz-transition: 0.1s linear -moz-box-shadow;
+    -ms-transition: 0.1s linear box-shadow;
+    -o-transition: 0.1s linear box-shadow;
+    transition: 0.1s linear box-shadow;
+}
+a.mooi-button:hover, a.mooi-button:focus, .mooi-button:hover, .mooi-button:focus {
+	text-decoration:none;
+	color:#222;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -ms-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.mooi-button:focus {
+    outline: 0;
+}
+
+.mooi-button[disabled], .mooi-button-disabled, .mooi-button-disabled:hover, .mooi-button-disabled:focus, .mooi-button-disabled:active, a.mooi-button[disabled], a.mooi-button-disabled, a.mooi-button-disabled:hover, a.mooi-button-disabled:focus, a.mooi-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=40);
+    -khtml-opacity: 0.40;
+    -moz-opacity: 0.40;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.mooi-button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.mooi-button-primary, .mooi-button-primary:visited,.mooi-button-primary:active, a.mooi-button-primary, a.mooi-button-primary:visited, a.mooi-button-primary:active {
+    background-color:$primary-button-color;
+    color: #fff;
+}
+.mooi-button-primary:hover, a.mooi-button-primary:hover, .mooi-button-primary:focus, a.mooi-button-primary:focus {
+	color: #fff;
+}
+
+.mooi-button-red, .mooi-button-orange, .mooi-button-green, .mooi-button-blue, a.mooi-button-red, a.mooi-button-orange, a.mooi-button-green, a.mooi-button-blue, .mooi-button-red:active, .mooi-button-orange:active, .mooi-button-green:active, .mooi-button-blue:active, a.mooi-button-red:active, a.mooi-button-orange:active, a.mooi-button-green:active, a.mooi-button-blue:active, .mooi-button-red:visited, .mooi-button-orange:visited, .mooi-button-green:visited, .mooi-button-blue:visited, a.mooi-button-red:visited, a.mooi-button-orange:visited, a.mooi-button-green:visited, a.mooi-button-blue:visited {
+	color: #fff;;
+	@include border-radius($button-radius);
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mooi-button-green, a.mooi-button-green, a.mooi-button-green:active, a.mooi-button-green:visited {
+	background:$green-button-color;
+}
+
+.mooi-button-red, a.mooi-button-red, a.mooi-button-red:active, a.mooi-button-red:visited {
+	background:$red-button-color;
+}
+
+.mooi-button-orange, a.mooi-button-orange, a.mooi-button-orange:active, a.mooi-button-orange:visited {
+	background:$orange-button-color;
+}
+
+.mooi-button-blue, a.mooi-button-blue, a.mooi-button-blue:active, a.mooi-button-blue:visited {
+	background:$blue-button-color;
+}
+
+.mooi-button-red:hover, .mooi-button-orange:hover, .mooi-button-green:hover, .mooi-button-blue:hover, 
+a.mooi-button-red:hover, a.mooi-button-orange:hover, a.mooi-button-green:hover, a.mooi-button-blue:hover,
+.mooi-button-red:focus, .mooi-button-orange:focus, .mooi-button-green:focus, .mooi-button-blue:focus, 
+a.mooi-button-red:focus, a.mooi-button-orange:focus, a.mooi-button-green:focus, a.mooi-button-blue:focus {
+	color: #fff;;
+}
+
+
+
+.mooi-button-xsmall, a.mooi-button-xsmall {
+	font-size:0.7rem;
+	line-height:0.85rem
+}
+.mooi-button-small, a.mooi-button-small {
+	font-size: 0.85rem;
+	line-height:1rem
+}
+.mooi-button-large, a.mooi-button-large {
+	font-size: 1.1rem;
+	line-height:1.3rem
+}
+.mooi-button-xlarge, a.mooi-button-xlarge {
+	font-size: 1.25rem;
+	line-height:1.4rem
+}

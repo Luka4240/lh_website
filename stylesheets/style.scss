@@ -1,0 +1,129 @@
+/* CSS Document */
+@import "../sass/_reset.scss"; 		// /* Do Not Remove */
+@import "_vars.scss";				// /* Do Not Remove */
+@import "../sass/_mixinlib.scss"; 	// /* Do Not Remove */
+@import "../sass/_layout.scss"; 	// /* Do Not Remove */
+@import "../sass/_typography.scss";
+@import "../sass/_images.scss";
+@import "../sass/_forms.scss";
+@import "../sass/_buttons.scss";
+@import "../sass/_tables.scss";
+@import "../sass/_menus.scss";
+
+.page-header {
+    @include linear-gradient(#333333, #060606);
+        
+}
+
+
+
+
+
+.centered {
+	margin:0 auto;
+	width:90%;
+	text-align:center;
+}
+.section {
+	border-bottom:1px solid #111;
+	@include rem('margin-top',15px);
+	@include rem('margin-bottom',20px);
+	@include rem('padding',0 0 15px 0);
+}
+
+.example-col {
+	background-color:#CCC;
+	@include border-radius(3px);
+	text-align:center;
+	@include rem('padding',4px 0);
+	@include rem('margin',4px 0);
+}
+
+.element {padding:20px; }
+
+.logo {
+	float:left;
+	width:100%;
+	max-width:168px;
+	height:auto; }
+.mooi-header {
+	@include rem('padding',5px 0 15px 0);
+	border-bottom:1px solid #111;
+	background-color:#fff; 
+}
+.big-intro {
+	@include rem('font-size',110px);
+	@include rem('line-height',140px);
+	@include rem('margin',120px 0 0 0);
+	@include rem('padding',0 0 120px 0);
+	border-bottom:1px solid #111;
+}
+.intro {
+	@include rem('font-size',20px);
+	@include rem('margin',20px 0);
+}
+.scroll {max-width:300px;display:block;margin-right:auto;margin-left:auto;@include rem('margin-bottom',10px);}
+
+a.link-active {color:$linkActive;}
+.link-visited a{color:$linkVisited;}
+
+
+/* #Media Queries
+================================================== */
+
+@media only screen and (min-width:960px) and (max-width:1060px) {
+	.big-intro {
+		@include rem('font-size',70px);
+		@include rem('line-height',80px);
+		@include rem('margin',50px 0 0 0);
+		@include rem('padding',0 0 50px 0);
+		border-bottom:1px solid #111; }
+		.example-col {
+		@include rem('margin',4px 0); }
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	.big-intro {
+		@include rem('font-size',60px);
+		@include rem('line-height',70px);
+		@include rem('margin',40px 0 0 0);
+		@include rem('padding',0 0 40px 0);
+		border-bottom:1px solid #111; }
+		.example-col {
+		@include rem('margin',4px 0);
+		@include rem('font-size',12px); }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.example-col {
+		@include rem('margin',4px 0);
+		@include rem('font-size',12px); }
+	}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.example-col {
+		@include rem('margin',4px 0);
+		@include rem('font-size',12px); }}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.example-col {
+		@include rem('margin',4px 0);
+		@include rem('font-size',12px); }}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.example-col {
+		@include rem('margin',4px 0);
+		@include rem('font-size',12px); }
+	.big-intro {
+		@include rem('font-size',30px);
+		@include rem('line-height',40px);
+		@include rem('margin',20px 0 0 0);
+		@include rem('padding',0 0 20px 0);
+		border-bottom:1px solid #111; }		
+}

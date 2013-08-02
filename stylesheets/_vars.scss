@@ -1,0 +1,72 @@
+/* =====================================
+	  Variables for the Mooi Framework 
+   ===================================== */
+
+$max-page-width: 1280px; // /* Sets the maximum width for the web page */
+
+/* ===================
+   Typography Settings 
+   =================== */
+// /* Set the font sizes below, these will then be output in both rem and px to ensure that there are no issues with browsers. */
+
+$default-fontSize: 16px; /*Default Font Size, it is recommend that you do not change this from 16px*/
+$h1Size: 50px; /* Heading 1 size */
+$h2Size: 44px; /* Heading 2 size */
+$h3Size: 38px; /* Heading 3 size */
+$h4Size: 32px; /* Heading 4 size */
+$h5Size: 26px; /* Heading 5 size */
+$h6Size: 20px; /* Heading 6 size */
+
+// /* Set Font Styles */
+$body-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$header-font: "Museo Sans Rounded 300", Arial, 'Helvetica Neue', Helvetica, sans-serif ;
+
+$fontColor: #111 ; /* The main font colour for all the website you are building */
+
+$linkColor: #333 ;      /* The colour that you want the HTML links to be */
+$linkVisited: #666;     /* The colour that you want the HTML links to be if they have been visited */
+$linkHover: #00F ;      /* The colour that you want the HTML links to be if they are hovered over */
+$linkActive: #c814FA;   /* The colour that you want the HTML links to be if they are the current page */
+
+/* ===================
+	Menu Settings
+   =================== */
+   
+$menuBackgroundColor:#dddddd; /* The background colour for the Menus in Mooi */
+  
+$blockedMenuWidth: 280px; /* The default width for the Blocked Menu, it is recomended that this is not changed above 280px as this will cause problems with viewing on mobile devices */
+$blockedMenuBorderColor: #dddddd; /* The border colour for the Blocked Menu */
+
+/* ===================
+	  Form Settings 
+   =================== */
+
+$inlineFormWidth: 0;
+$inlineInputWidth: 160px;
+$inlineLabelWidth: 160px;
+
+$columnFormWidth: 0;
+$columnInputWidth: 160px;
+$columnLabelWidth: 160px;
+
+$alignedFormWidth: 0;
+$alignedInputWidth: 160px;
+$alignedLabelWidth: 130px;
+$alignedCheckboxWidth: 160px;
+
+$multicolFormWidth: 0;
+$multicolInputWidth: 160px;
+$multicolLabelWidth: 160px;
+
+/* ===================
+	Button Settings 
+   =================== */
+
+$button-radius: 4px;
+
+$primary-button-color: #C814FA ;
+
+$green-button-color: #0CAA1E ;
+$red-button-color: #DC2828 ;
+$orange-button-color: #FF8200 ;
+$blue-button-color: #32A0C8 ;
