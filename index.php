@@ -26,53 +26,74 @@
 
 <body>
 
-<!-- ======== Mooi Layout, Delete everything below and create your own site! :-) ========= -->
+<!-- ======== Site Content ========= -->
 
 <header class="full-row page-header">
     <div class="row">
-        <div class="sixteen columns">
+        <div class="sixteen columns header">
+            <img class="logo" src="images/logo.png" alt="Luke Howard" width="300" height="80" />
             <nav>
                 <ul class="mooi-menu-horizontal  mooi-menu-right">
                     <li><a href="#">Home</a></li>    
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>        
 </header>    
-<div class="row">
-    <div class="sixteen columns">
-    <h3>Luke Howard</h3>
-        <p>Taking your website from idea to reality.</p>
-    </div>    
     
-</div>
-<div class="row">
-    <div class="one-third column">
-        <h2>Developer</h2>
-        <p>Focusing mainly on HTML5 and CSS3 but also working with jQuery, PHP and MySQL to fully develop any site, as well as the ability to work with Concrete5 and WordPress.</p>    
+    
+<div class="row section">
+    <div class="eight columns">
+        <img class="portrait" src="images/luke.png" alt="Luke Howard" width="300" />
         
     </div>
-    <div class="one-third column">
-    <p>A Funky Image?</p>
-    </div>
+    <div class="eight columns">
+        
+        <p class="big-intro">Hey there I'm Luke. I design, develop and market websites.</p>
+    </div>    
+</div>
     
+<div class="row">
+    <div class="two-thirds column">
+        <h3>Featured Work</h3>
+        <div class="eight columns">
+        <img src="images/disuk.png" alt="DISUK Limited"/>
+        </div>
+        <div class="eight columns">
+            <h4>DISUK Limited</h4>
+            <p>DISUK needed a complete rebrand, from their corporate image all the way through to their letter heads. DISUK trade at a global level, and have a variety of products available to a wide market.</p>
+            <p>To ensure that I delivered the right solution I first needed to ensure that I understood their needs and requirements correctly, and was able to ensure that the finished solution met them.</p>
+        </div>
+        
+    </div>    
     <div class="one-third column">
-        <h2>Designer</h2>
-        <p>As well as being a developer, the ability to provide a website from start to finish, creating the concepts and wireframe, through to ensuring it is fully functioning.</p>
-    
+        <h3>Latest Articles</h3>
+        <ul class="articles">
+            <li>-> Getting to grips with SASS (Love at first site)</li>
+            <li>-> Getting to grips with GIT</li>
+            <li>-> Improving my Workflow and Developing Mooi</li>
+            <li>-> Why designers should know HTML and CSS capabilities</li>
+        </ul>
+        
     </div>    
     
 </div>
-
+    
+    
 <footer class="row">
+    <div class="sixteen columns footer">
+        
+    </div>
 
     <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
-    <div class="four columns"></div>
-    <div class="four columns"></div>
-    <div class="four columns"></div>
+    <div class="four columns"><p>&nbsp;</p></div>
+    <div class="four columns"><p>&nbsp;</p></div>
+    <div class="four columns"><p>Website built by <a href="http://www.lukehoward.me.uk/about.php">Me</a> using <a href="http://www.lukehoward.me.uk/mooi">Mooi</a>.</p></div>
     
 </footer>    
     

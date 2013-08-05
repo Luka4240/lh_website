@@ -25,8 +25,8 @@ $fontColor: #111 ; /* The main font colour for all the website you are building 
 
 $linkColor: #333 ;      /* The colour that you want the HTML links to be */
 $linkVisited: #666;     /* The colour that you want the HTML links to be if they have been visited */
-$linkHover: #00F ;      /* The colour that you want the HTML links to be if they are hovered over */
-$linkActive: #c814FA;   /* The colour that you want the HTML links to be if they are the current page */
+$linkHover: #ff8a00 ;      /* The colour that you want the HTML links to be if they are hovered over */
+$linkActive: #ff8a00;   /* The colour that you want the HTML links to be if they are the current page */
 
 /* ===================
 	Menu Settings
@@ -64,9 +64,9 @@ $multicolLabelWidth: 160px;
 
 $button-radius: 4px;
 
-$primary-button-color: #C814FA ;
+$primary-button-color: #ff8a00 ;
 
 $green-button-color: #0CAA1E ;
 $red-button-color: #DC2828 ;
-$orange-button-color: #FF8200 ;
+$orange-button-color: #C814FA ;
 $blue-button-color: #32A0C8 ;
