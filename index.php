@@ -34,12 +34,12 @@
             <img class="logo" src="images/logo.png" alt="Luke Howard" width="300" height="80" />
             <nav>
                 <ul class="mooi-menu-horizontal  mooi-menu-right">
-                    <li><a href="#">Home</a></li>    
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="http://lukehoward.me.uk">Home</a></li>    
+                    <li><a href="http://lukehoward.me.uk/about">About</a></li>
+                    <li><a href="http://lukehoward.me.uk/work">Work</a></li>
+                    <li><a href="http://lukehoward.me.uk/projects">Projects</a></li>
+                    <li><a href="http://lukehoward.me.uk/blog">Blog</a></li>
+                    <li><a href="http://lukehoward.me.uk/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,6 +55,7 @@
     <div class="eight columns">
         
         <p class="big-intro">Hey there I'm Luke. I design, develop and market websites.</p>
+        <p class="big-intro">I am still developing this site!</p>
     </div>    
 </div>
     
@@ -73,13 +74,19 @@
     </div>    
     <div class="one-third column">
         <h3>Latest Articles</h3>
-        <ul class="articles">
-            <li>-> Getting to grips with SASS (Love at first site)</li>
-            <li>-> Getting to grips with GIT</li>
-            <li>-> Improving my Workflow and Developing Mooi</li>
-            <li>-> Why designers should know HTML and CSS capabilities</li>
+        <ul class="articles-list">
+            <li>My Introduction to SASS</li>
+            <li>Getting to grips with Version Control</li>
+            <li>Developing a SCSS Framework</li>
+            <li>Why designers need to understand HTML and CSS</li>
         </ul>
         
+        
+        <?php include 'feed.php' ?>
+        
+        
+	   <a href="<?php echo $p->url?>"><?php echo $p->title ?></a></h2>
+
     </div>    
     
 </div>

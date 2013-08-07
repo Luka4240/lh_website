@@ -1,0 +1,30 @@
+/* ===================
+    Blog CSS
+   =================== */            
+                                
+.blog-content {
+    border-right:1px solid #ddd;
+    @include rem('padding',0 10px 10px 0);
+    @include rem('margin',10px 0 10px 0);
+}
+.blog-sidebar {
+    @include rem('margin',30px 0 0 0);
+}
+
+.blog-content h2 {
+    @include rem('margin',5px 0);
+    @include rem('padding',5px 0);
+}
+.blog-button {
+    float:right;
+    @include rem('margin',5px 20px 0 0);
+}
+.blog-sidebar ul {
+    @include rem('margin',0 0 0 10px);
+}
+.blog-sidebar ul li, .articles-list {
+    list-style-image: url('http://lukehoward.me.uk/images/bullet.png');
+
+    @include rem('margin',4px 0);
+    
+}
