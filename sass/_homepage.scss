@@ -1,0 +1,68 @@
+.featured-section {
+    @include rem('padding', 0 10px 0 0);
+    border-right:1px solid #ccc;
+}
+.articles-section ul li {
+    @include rem('margin',0 0 0 20px);
+}
+.portrait {
+    max-width:300px;
+    margin-left:125px;
+    margin-top:40px;
+}
+.big-intro {
+	@include rem('font-size',55px);
+	@include rem('line-height',65px);
+	@include rem('margin',90px 0 0 0);
+	@include rem('padding',0 0 90px 0);
+}
+
+/* #Media Queries
+================================================== */
+
+@media only screen and (min-width:960px) and (max-width:1060px) {
+	.big-intro {
+		@include rem('font-size',45px);
+		@include rem('line-height',55px);
+		@include rem('margin',40px 0 0 0);
+		@include rem('padding',0 0 40px 0);
+		 }
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	.big-intro {
+		@include rem('font-size',40px);
+		@include rem('line-height',50px);
+		@include rem('margin',30px 0 0 0);
+		@include rem('padding',0 0 30px 0);
+		 }
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.big-intro {
+		@include rem('font-size',30px);
+		@include rem('line-height',40px);
+		@include rem('margin',10px 0 0 0);
+		@include rem('padding',0 0 10px 0);
+		 }		
+    .portrait {
+    max-width:300px;
+    margin-left:0;
+    margin-top:10px;
+}
+}

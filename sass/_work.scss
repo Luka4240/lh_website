@@ -1,0 +1,20 @@
+.work-div {
+    @include rem('margin',15px 5px);
+    @include rem('padding',10px);
+    @include border-radius(4px);
+    border:1px solid #ccc;
+}
+.work-div p {
+    border-top:1px solid #ccc;
+}
+.work-div img {
+    @include border-radius(4px);
+    max-width:300px;
+    margin:0 auto;
+}
+
+.disuk:focus {background:url(../images/work/disuk-color.png); }
+.tmt:focus {background:url(../images/work/tmt-color.png); }
+.mooi:focus {background:url(../images/work/mooi-color.png); }
+.dpp:focus {background:url(../images/work/dpp-color.png); }
+.abacus:focus {background:url(../images/work/abacus-color.png); }

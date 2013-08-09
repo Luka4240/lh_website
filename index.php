@@ -22,6 +22,11 @@
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
 
+<!--[if lte IE 9]>
+<link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
+<![endif]-->
+    
+    
 </head>
 
 <body>
@@ -49,18 +54,33 @@
     
 <div class="row section">
     <div class="eight columns">
-        <img class="portrait" src="images/luke.png" alt="Luke Howard" width="300" />
+        <img class="portrait  fade-in one" src="images/luke.png" alt="Luke Howard" width="300" />
         
     </div>
     <div class="eight columns">
         
-        <p class="big-intro">Hey there I'm Luke. I design, develop and market websites.</p>
-        <p class="big-intro">I am still developing this site!</p>
-    </div>    
+        <p class="big-intro  fade-in two">Hey there I'm Luke. I design, develop and market websites.</p>
+        <!--<p class="big-intro  fade-in three">and I am still developing this one!</p>-->
+    
+    <div class="icons">
+        <a href="http://twitter.com/LukaHoward" class="twitter" target="_blank"></a>
+        <a href="http://www.linkedin.com/pub/luke-howard/a/673/59b" class="linkedin" target="_blank"></a>
+        <a href="http://pinterest.com/lucash85/" class="pinterest" target="_blank"></a>
+        <a href="https://github.com/Luka4240" class="github" target="_blank"></a>
+        <a href="mailto:luke@lukehoward.me.uk" class="email" target="_blank"></a>
+        <a href="http://lukehoward.me.uk/blog/rss" class="rss" target="_blank"></a>
+    
+    </div>
+
+    
+    </div>
+    
+    
+    
 </div>
     
 <div class="row">
-    <div class="two-thirds column">
+    <div class="two-thirds column  featured-section">
         <h3>Featured Work</h3>
         <div class="eight columns">
         <img src="images/disuk.png" alt="DISUK Limited"/>
@@ -72,7 +92,7 @@
         </div>
         
     </div>    
-    <div class="one-third column">
+    <div class="one-third column articles-section">
         <h3>Latest Articles</h3>
         <ul class="articles-list">
             <li>My Introduction to SASS</li>
@@ -85,10 +105,10 @@
         <?php include 'feed.php' ?>
         
         
-	   <a href="<?php echo $p->url?>"><?php echo $p->title ?></a></h2>
+	   <a href="<?php echo $p->url?>"><?php echo $p->title ?></a>
 
     </div>    
-    
+
 </div>
     
     

@@ -7,100 +7,98 @@
 @import "../sass/_images.scss";
 @import "../sass/_forms.scss";
 @import "../sass/_buttons.scss";
-@import "../sass/_tables.scss";
+// @import "../sass/_tables.scss";
 @import "../sass/_menus.scss";
 @import "../sass/_blog.scss";
-
+@import "../sass/_homepage.scss";
+@import "../sass/_icons.scss";
+@import "../sass/_contact.scss";
+@import "../sass/_about.scss";
+@import "../sass/_work.scss";
+ 
+  
 .page-header {
    border-top:3px solid #ff8a00;
-        
-}
-.logo {
+          
+}  
+.logo { 
     max-width:300px;
     width:100%;
     float:left;
 }
-.header {
+.header { 
     @include rem('padding',5px);
-    border-bottom:1px #ccc solid;
+    border-bottom:1px #ccc solid; 
 }
 .footer {
     @include rem('padding',5px);
     border-top:1px #ccc solid;
 }
-.portrait {
-    max-width:300px;
-    margin-left:125px;
-    margin-top:90px;
-}
 
-.centered {
+.centered { 
 	margin:0 auto;
-	width:90%;
+	width:90%; 
 	text-align:center;
-}
-.section {
+}      
+.section { 
 	border-bottom:1px solid #ccc;
 	@include rem('margin-top',15px);
 	@include rem('margin-bottom',20px);
 	@include rem('padding',0 0 15px 0);
 }
-
-.big-intro {
-	@include rem('font-size',55px);
-	@include rem('line-height',65px);
-	@include rem('margin',120px 0 0 0);
-	@include rem('padding',0 0 120px 0);
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
 }
-
-
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.5s;
+-moz-animation-delay: 0.5s;
+animation-delay: 0.5s;
+}
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+.fade-in.three {
+-webkit-animation-delay: 1.8s;
+-moz-animation-delay:1.8s;
+animation-delay: 1.8s;
+} 
 
 /* #Media Queries
 ================================================== */
 
-@media only screen and (min-width:960px) and (max-width:1060px) {
-	.big-intro {
-		@include rem('font-size',45px);
-		@include rem('line-height',55px);
-		@include rem('margin',50px 0 0 0);
-		@include rem('padding',0 0 50px 0);
-		 }
-}
+@media only screen and (min-width:960px) and (max-width:1060px) { }
 
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-	.big-intro {
-		@include rem('font-size',40px);
-		@include rem('line-height',50px);
-		@include rem('margin',40px 0 0 0);
-		@include rem('padding',0 0 40px 0);
-		 }
-}
+@media only screen and (max-width: 959px) { }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 959px) { }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-}
+@media only screen and (max-width: 767px) { }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-}
+@media only screen and (min-width: 480px) and (max-width: 767px) { }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-	.big-intro {
-		@include rem('font-size',30px);
-		@include rem('line-height',40px);
-		@include rem('margin',20px 0 0 0);
-		@include rem('padding',0 0 20px 0);
-		 }		
-    .portrait {
-    max-width:300px;
-    margin-left:0;
-    margin-top:20px;
-}
-}
+@media only screen and (max-width: 479px) { }

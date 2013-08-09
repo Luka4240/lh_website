@@ -1,0 +1,25 @@
+.icons a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    vertical-align: middle;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+ 
+.icons a.twitter { background: url(../images/icons.png) left top no-repeat; }
+.icons a.rss { background: url(../images/icons.png) -40px top no-repeat; }
+.icons a.pinterest { background: url(../images/icons.png) -120px top no-repeat; }
+.icons a.linkedin { background: url(../images/icons.png) -80px top no-repeat; }
+.icons a.email { background: url(../images/icons.png) -160px top no-repeat; }
+.icons a.github { background: url(../images/icons.png) -200px top no-repeat; }
+ 
+.icons a.twitter:hover  { background-position: left -34px;}
+.icons a.rss:hover  { background-position: -40px -34px;}
+.icons a.pinterest:hover  { background-position: -120px -34px;}
+.icons a.linkedin:hover  { background-position: -80px -34px;}
+.icons a.email:hover  { background-position: -160px -34px;}
+.icons a.github:hover  { background-position:  -200px -34px;}
