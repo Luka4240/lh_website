@@ -130,7 +130,7 @@ $(document).ready(function(){
                     <li><a href="http://lukehoward.me.uk">Home</a></li>    
                     <li><a href="http://lukehoward.me.uk/about">About</a></li>
                     <li><a href="http://lukehoward.me.uk/work">Work</a></li>
-                    <li><a href="http://lukehoward.me.uk/projects">Projects</a></li>
+                    <!--<li><a href="http://lukehoward.me.uk/projects">Projects</a></li>-->
                     <li><a href="http://lukehoward.me.uk/blog">Blog</a></li>
                     <li><a href="http://lukehoward.me.uk/contact">Contact</a></li>
                 </ul>

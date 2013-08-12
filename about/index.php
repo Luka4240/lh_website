@@ -21,11 +21,15 @@
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/lukehoward.me.uk/35410.css" type="text/css" />
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="../stylesheets/style.css" rel="stylesheet" type="text/css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<script src="../jquery/raphael.js" type="text/javascript"></script>
+<script src="../jquery/init.js" type="text/javascript"></script>
 
+    
+    
 <!--[if lte IE 9]>
 <link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
 <![endif]-->
-    
     
 </head>
 
@@ -42,7 +46,7 @@
                     <li><a href="http://lukehoward.me.uk">Home</a></li>    
                     <li><a href="http://lukehoward.me.uk/about">About</a></li>
                     <li><a href="http://lukehoward.me.uk/work">Work</a></li>
-                    <li><a href="http://lukehoward.me.uk/projects">Projects</a></li>
+                    <!--<li><a href="http://lukehoward.me.uk/projects">Projects</a></li>-->
                     <li><a href="http://lukehoward.me.uk/blog">Blog</a></li>
                     <li><a href="http://lukehoward.me.uk/contact">Contact</a></li>
                 </ul>
@@ -56,98 +60,134 @@
     
     <div class="sixteen columns">
     <h2>About me</h2>
-        <p>I'm a Web Designer and Developer from Northampton, UK.</p>
-        <p>I have a love for taking on complex tasks and solutions and making them work, and developing them to be ensure that the user has no problems.</p>
-        
-        <p>I like to ensure that any website I develop</p>
-        
-        <p>If I'm not desigining or developing, i am either down the gym or out enjoying some good food, or maybe even cooking it!</p>
-        
+        <p class="about-intro1">I'm a multi-discipline web developer and designer from Northampton, UK.</p>
+        <p>I am happiest when I am challenge by a project. Whatever the project I am taking on I tend not to be phased by it, and I am willing to give anything a go and learn new skills to complete the project.</p>
+        <p>I love taking on a complex project, and making it easy to use for the user. I enjoy working on with new technologies and solutions, as well as developing solutions to any problem.</p>
+        <p>If I'm not desigining or developing, I'm either down the gym, climbing or out enjoying some good food with friends and family, or there is a slim chance I could be cooking it!</p>
+    </div>
+</div>
+
+<div class="row section">
+    <div class="one-third column">
+        <div id="diagram"></div>
+            <div class="get">
+                <div class="arc">
+                    <span class="text">Developer</span>
+                    <input type="hidden" class="percent" value="60" />
+                    <input type="hidden" class="color" value="#97BE0D" />
+                </div>
+                <div class="arc">
+                    <span class="text">Designer</span>
+                    <input type="hidden" class="percent" value="25" />
+                    <input type="hidden" class="color" value="#D84F5F" />
+                </div>
+                <div class="arc">
+                    <span class="text">Marketer</span>
+                    <input type="hidden" class="percent" value="15" />
+                    <input type="hidden" class="color" value="#88B8E6" />
+                </div>
+        </div>
+    </div>
     
-        
-        
-        
-        <div class="sixteen columns">
-            <div class="about-img-container">
-                <img class="about-img" src="../images/about/luke-3.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-5.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-8.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-2.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-7.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-1.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-6.png" alt="me" />
-                <img class="about-img" src="../images/about/luke-4.png" alt="me" />
-            </div>                
+    <div class="two-thirds column">
+        <div class="one-third column">
+            <h4>Part Developer</h4>
+            <ul>
+                <li>Front End Development</li>
+                <li>HTML5</li>
+                <li>CSS / SASS</li>
+                <li>jQuery</li>
+                <li>Wordpress</li>
+                <li>Concrete5</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Server Management</li>
+            </ul>
+        </div>
+        <div class="one-third column">
+            <h4>Part Designer</h4>
+            <ul>
+                <li>Website Design</li>
+                <li>Corporate Stationery</li>
+                <li>Email Templates</li>
+                <li>User Interface</li>
+                <li>Application Design</li>
+            </ul>
+        </div>
+        <div class="one-third column">
+            <h4>Part Marketer</h4>
+            <ul>
+                <li>Email Marketing</li>
+                <li>Social Networking Pages</li>
+                <li>Pay Per Click</li>
+            </ul>
         </div>
         
-    </div>
-</div>
-
-<div class="row">
-    <div class="one-third column part-1">
         
-    <h4>Part Developer</h4>
-        <ul>
-            <li>Front End Development</li>
-            <li>HTML5</li>
-            <li>CSS / SASS</li>
-            <li>jQuery</li>
-            <li>Wordpress</li>
-            <li>Concrete5</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Server Management</li>
-        </ul>
     </div>
-    
-    <div class="one-third column part-2">
-
-        <h4>Part Designer</h4>
-        <ul>
-            <li>Website Design</li>
-            <li>Corporate Stationery</li>
-            <li>Email Templates</li>
-            <li>User Interface</li>
-            <li>Application Design</li>
-        </ul>
-    </div>
-    
-    <div class="one-third column part-3">
-
-        <h4>Part Marketer</h4>
-        <ul>
-            <li>Email Marketing</li>
-            <li>Social Networking Pages</li>
-            <li>Pay Per Click</li>
-        </ul>
-    
-    </div>
-    
-    
 </div>
-<div class="row">
+    
+<div class="row section">
+    
+<div class="one-third column">
+            <div class="about-img-container">
+            <img class="about-img" src="../images/about/luke-3.png" alt="me" />
+            <img class="about-img" src="../images/about/luke-5.png" alt="me" />
+            </div>
+        </div>
+    
+        <div class="one-third column">
+            <div class="about-img-container">
+                <img class="about-img" src="../images/about/luke-8.png" alt="me" />
+                <img class="about-img" src="../images/about/luke-2.png" alt="me" />
+            </div>
+        </div>
+        
+        <div class="one-third column">
+            <div class="about-img-container">
+                <img class="about-img" src="../images/about/luke-7.png" alt="me" />
+                <img class="about-img" src="../images/about/luke-1.png" alt="me" />
+            </div>
+        </div>
+    
+</div>    
+    
 
+<div class="row section">
     <div class="sixteen columns">
-    <h3>My Other Skills</h3>
-        <p>Not online am I competent in the web industry, I also have experience in other fields.</p>
+    <h3>A bit more about me</h3>
+    </div>
+    <div class="eight columns">
+        <h4>My Other Skills</h4>
+            <p>I don't just do Web Development and Design, I also have skills in other areas.</p>
+            <ul>
+                <li>DNS Management</li>
+                <li>Windows Network Management</li>
+                <li>Network Infrastructure</li>
+                <li>Business Development and Sales</li>
+                <li>Account Management</li>
+            </ul>
+    
+    </div>
+    <div class="eight columns">
+        <h4>Odd Things about Me</h4>
+        <p>Just some useless information about me, that will probably make you laugh.</p>
         <ul>
-            <li>DNS Management</li>
-            <li>Windows Network Management</li>
-            <li>Network Infrastructure</li>
-            <li>Business Development and Sales</li>
-            <li>Account Management</li>
+            <li>I own over 700 Movies</li>
+            <li>I have an unhealthy addiction to Maryland Cookies</li>
+            <li>I am a great believer in the simplest solution is often the best.</li>
+            <li>I use a Windows PC.(Now I am sure a few of you will be confused!)</li>
+            <li>I love Big Bang Theory</li>
         </ul>
     
     
     </div>
     
+
     
 </div>    
     
 <footer class="row">
-    <div class="sixteen columns footer">
-        
-    </div>
 
     <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
     <div class="four columns"><p>&nbsp;</p></div>

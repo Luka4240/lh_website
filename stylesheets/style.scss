@@ -16,34 +16,10 @@
 @import "../sass/_about.scss";
 @import "../sass/_work.scss";
 
-.about-img {
-    max-width:135px;
-    height:auto;
-    display:inline;
-    @include rem('padding',5px);
-    @include rem('margin',5px);
-    @include border-radius(4px);
-    border:1px solid #ccc;
-    -moz-box-shadow: 2px 2px 2px #ddd;
-    -webkit-box-shadow: 2px 2px 2px #ddd;
-    box-shadow: 2px 2px 2px #ddd;
-}
- img.about-img {
-    @include border-radius(4px);
-}
-.about-img-container {
-    margin: 0 auto;
-    width:98%;
-}
-.part-1 {
-    background: url(../images/about/chart-1.png) no-repeat;
-}
-.part-2 {
-    background: url(../images/about/chart-2.png) no-repeat;
-}
-.part-3 {
-    background: url(../images/about/chart-3.png) no-repeat;
-}
+
+
+
+
 .page-header {
    border-top:3px solid #ff8a00;
           

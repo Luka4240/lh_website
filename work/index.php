@@ -22,6 +22,23 @@
 <link rel="stylesheet" href="//f.fontdeck.com/s/css/hHe2eeOPSef/0iNrBlOdAIYMato/www.lukehoward.me.uk/35410.css" type="text/css" />
 <link href="../stylesheets/style.css" rel="stylesheet" type="text/css">
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    //portfolio - show link
+    $('.fdw-background').hover(
+        function () {
+            $(this).animate({opacity:'1'});
+        },
+        function () {
+            $(this).animate({opacity:'0'});
+        }
+    ); 
+});
+    
+    
+</script>
+    
 <!--[if lte IE 9]>
 <link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
 <![endif]-->
@@ -55,86 +72,69 @@
     
     
 <div class="row">
-    
     <div class="sixteen columns">
-    <h2>My Work</h2>
-            
+        
+        
+        <div class="one-third column portfolio-item">
+            <article class="disuk">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="one-third column portfolio-item">
+            <article class="mooi">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="one-third column portfolio-item">
+            <article class="abacus">
+                <div style="opacity:0;" class="fdw-background">
+                    <p class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></p>
+                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="one-third column portfolio-item">
+            <article class="tmt">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4 class="portfolio-title"><a href="http://www.tmtkitchens.co.uk" target="_blank">TMT Kitchens</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.tmtkitchens.co.uk">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="one-third column portfolio-item">
+            <article class="tape">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4 class="portfolio-title"><a href="http://www.tapeencryption.com" target="_blank">TapeEncryption.com</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.tapeencryption.com">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        <div class="one-third column portfolio-item">
+            <article class="dpp">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                </div>
+            </article>
+        </div>
+        
+        
     </div>
-    
-    <div class="sixteen columns">
-    
-    <a href="http://www.disuk.com/" target="_blank" class="ec-circle" id="circle"> 
-        <h3 class="work-circle-h3">DISUK Limited</h3>    
-    </a>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-<script type="text/javascript" src="../jquery/circles/js"></script>    
-<script type="text/javascript">
-            $(function() {
-				
-				$('#circle').circlemouse({
-					onMouseEnter	: function( el ) {
-					
-						el.addClass('ec-circle-hover');
-					
-					},
-					onMouseLeave	: function( el ) {
-						
-						el.removeClass('ec-circle-hover');
-						
-					},
-					onClick			: function( el ) {
-						
-						alert('clicked');
-						
-					}
-				});
-				
-			});
-        </script>    
-    
-    </div>
-    
-    
-    <div class="one-third column">
-        <div class="work-div">
-            <img class="disuk" src="../images/work/disuk.png" alt="DISUK Website">
-            <h6>DISUK</h6>
-            <p>Corporate Branding, Website, Social Media and Emarketing, 2009 - 2013</p>
-        </div>            
-    </div>
-    <div class="one-third column">
-        <div class="work-div">
-    <img class="mooi" src="../images/work/mooi.png" alt="Mooi Website">
-        <h6>Mooi Framework</h6>
-            <p>Website Design and Product Development 2013</p>
-            </div>   
-    </div>
-    <div class="one-third column">
-        <div class="work-div">
-    <img class="tmt" src="../images/work/tmt.png" alt="TMT Kitchens">
-        <h6>TMT Kitchens &amp; Bathrooms</h6>
-            <p>Website, Facebook Page and Corporate Stationary, 2010 - 2013</p>
-            </div>   
-    </div>
-    <div class="one-third column">
-        <div class="work-div">
-    <img class="dpp" src="../images/work/dpp.png" alt="DISUK Partner Portal">
-        <h6>DISUK Partner Portal</h6>
-            <p>Secure Customer Portal, 2013</p>
-            </div>   
-    </div>
-    <div class="one-third column">
-        <div class="work-div">
-    <img class="abacus" src="../images/work/abacus.png" alt="Abacus Bouncy Castles">
-        <h6>Abacus Bouncy Castles</h6>
-            <p>Website and Facebook Page, 2012 - 2013</p>
-            </div>   
-    </div>
-    
-    
-    
-    
 </div>
+    
+
+
     
     
 <footer class="row">
