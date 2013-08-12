@@ -26,6 +26,8 @@
 <link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
 <![endif]-->
     
+
+
     
 </head>
 
@@ -58,6 +60,40 @@
     <h2>My Work</h2>
             
     </div>
+    
+    <div class="sixteen columns">
+    
+    <a href="http://www.disuk.com/" target="_blank" class="ec-circle" id="circle"> 
+        <h3 class="work-circle-h3">DISUK Limited</h3>    
+    </a>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery/circles/js"></script>    
+<script type="text/javascript">
+            $(function() {
+				
+				$('#circle').circlemouse({
+					onMouseEnter	: function( el ) {
+					
+						el.addClass('ec-circle-hover');
+					
+					},
+					onMouseLeave	: function( el ) {
+						
+						el.removeClass('ec-circle-hover');
+						
+					},
+					onClick			: function( el ) {
+						
+						alert('clicked');
+						
+					}
+				});
+				
+			});
+        </script>    
+    
+    </div>
+    
     
     <div class="one-third column">
         <div class="work-div">
