@@ -58,21 +58,9 @@
         
     </div>
     <div class="eight columns">
-        
         <p class="big-intro  fade-in two">Hey there I'm Luke. I design, develop and market websites.</p>
-        <!--<p class="big-intro  fade-in three">and I am still developing this one!</p>-->
-    
-    <div class="icons">
-        <a href="http://twitter.com/LukaHoward" class="twitter" target="_blank"></a>
-        <a href="http://www.linkedin.com/pub/luke-howard/a/673/59b" class="linkedin" target="_blank"></a>
-        <a href="http://pinterest.com/lucash85/" class="pinterest" target="_blank"></a>
-        <a href="https://github.com/Luka4240" class="github" target="_blank"></a>
-        <a href="mailto:luke@lukehoward.me.uk" class="email" target="_blank"></a>
-        <a href="http://lukehoward.me.uk/blog/rss" class="rss" target="_blank"></a>
-    
-    </div>
-
-    
+        <a class="mooi-button mooi-button-primary fade-in three" href="/about">Learn More About Me</a>
+        
     </div>
     
     
@@ -83,30 +71,24 @@
     <div class="two-thirds column  featured-section">
         <h3>Featured Work</h3>
         <div class="eight columns">
-        <img src="images/disuk.png" alt="DISUK Limited"/>
+        <img src="images/work/disuk.png" alt="DISUK Limited"/>
         </div>
         <div class="eight columns">
             <h4>DISUK Limited</h4>
             <p>DISUK needed a complete rebrand, from their corporate image all the way through to their letter heads. DISUK trade at a global level, and have a variety of products available to a wide market.</p>
-            <p>To ensure that I delivered the right solution I first needed to ensure that I understood their needs and requirements correctly, and was able to ensure that the finished solution met them.</p>
+            
         </div>
         
     </div>    
     <div class="one-third column articles-section">
         <h3>Latest Articles</h3>
         <ul class="articles-list">
-            <li>My Introduction to SASS</li>
-            <li>Getting to grips with Version Control</li>
-            <li>Developing a SCSS Framework</li>
-            <li>Why designers need to understand HTML and CSS</li>
+            <li><a href="http://lukehoward.me.uk/blog/2013/08/the-best-sass-mixin">The Best SASS Mixin</a></li>
+            <li><a href="http://lukehoward.me.uk/blog/2013/08/getting-to-grips-with-version-control">Getting to grips with Version Control</a></li>
+            <li><a href="http://lukehoward.me.uk/blog/2013/08/my-introduction-to-sass">My Introduction to SASS</a></li>
+            <li><a href="http://lukehoward.me.uk/blog/2013/08/why-i-think-designers-should-understand-web-technologies">Why I think designers should understand web technologiesM</a></li>
         </ul>
         
-        
-        <?php include 'feed.php' ?>
-        
-        
-	   <a href="<?php echo $p->url?>"><?php echo $p->title ?></a>
-
     </div>    
 
 </div>
@@ -120,7 +102,15 @@
     <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
-    <div class="four columns"><p>Website built by <a href="http://www.lukehoward.me.uk/about.php">Me</a> using <a href="http://www.lukehoward.me.uk/mooi">Mooi</a>.</p></div>
+    <div class="four columns"><div class="icons">
+        <a href="http://twitter.com/LukaHoward" class="twitter" target="_blank"></a>
+        <a href="http://www.linkedin.com/pub/luke-howard/a/673/59b" class="linkedin" target="_blank"></a>
+        <a href="http://pinterest.com/lucash85/" class="pinterest" target="_blank"></a>
+        <a href="https://github.com/Luka4240" class="github" target="_blank"></a>
+        <a href="mailto:luke@lukehoward.me.uk" class="email" target="_blank"></a>
+        <a href="http://lukehoward.me.uk/blog/rss" class="rss" target="_blank"></a>
+    
+    </div></div>
     
 </footer>    
     

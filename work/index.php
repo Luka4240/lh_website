@@ -61,7 +61,7 @@ jQuery(document).ready(function($){
                     <li><a href="http://lukehoward.me.uk">Home</a></li>    
                     <li><a href="http://lukehoward.me.uk/about">About</a></li>
                     <li><a href="http://lukehoward.me.uk/work">Work</a></li>
-                    <li><a href="http://lukehoward.me.uk/projects">Projects</a></li>
+                    <!--<li><a href="http://lukehoward.me.uk/projects">Projects</a></li>-->
                     <li><a href="http://lukehoward.me.uk/blog">Blog</a></li>
                     <li><a href="http://lukehoward.me.uk/contact">Contact</a></li>
                 </ul>
@@ -87,7 +87,7 @@ jQuery(document).ready(function($){
         <div class="one-third column portfolio-item">
             <article class="mooi">
                 <div style="opacity:0;" class="fdw-background">
-                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
+                    <h4><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
                     <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
                 </div>
             </article>
@@ -96,8 +96,8 @@ jQuery(document).ready(function($){
         <div class="one-third column portfolio-item">
             <article class="abacus">
                 <div style="opacity:0;" class="fdw-background">
-                    <p class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></p>
-                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                    <h4><a href="http://www.abacusbouncycastles.co.uk" target="_blank">Abacus Bouncy Castles</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.abacusbouncycastles.co.uk">Open Project →</a>
                 </div>
             </article>
         </div>
@@ -114,7 +114,7 @@ jQuery(document).ready(function($){
         <div class="one-third column portfolio-item">
             <article class="tape">
                 <div style="opacity:0;" class="fdw-background">
-                    <h4 class="portfolio-title"><a href="http://www.tapeencryption.com" target="_blank">TapeEncryption.com</a></h4>
+                    <h4 class="portfolio-title"><a href="http://www.tapeencryption.com" target="_blank">TapeEncryption</a></h4>
                     <a class="mooi-button mooi-button-primary" href="http://www.tapeencryption.com">Open Project →</a>
                 </div>
             </article>
@@ -123,7 +123,7 @@ jQuery(document).ready(function($){
         <div class="one-third column portfolio-item">
             <article class="dpp">
                 <div style="opacity:0;" class="fdw-background">
-                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
+                    <h4 class="portfolio-title"><a href="http://www.disuk.com" target="_blank">DISUK Partner Portal</a></h4>
                     <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
                 </div>
             </article>
@@ -145,7 +145,15 @@ jQuery(document).ready(function($){
     <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
-    <div class="four columns"><p>Website built by <a href="http://www.lukehoward.me.uk/about.php">Me</a> using <a href="http://www.lukehoward.me.uk/mooi">Mooi</a>.</p></div>
+    <div class="four columns"><div class="icons">
+        <a href="http://twitter.com/LukaHoward" class="twitter" target="_blank"></a>
+        <a href="http://www.linkedin.com/pub/luke-howard/a/673/59b" class="linkedin" target="_blank"></a>
+        <a href="http://pinterest.com/lucash85/" class="pinterest" target="_blank"></a>
+        <a href="https://github.com/Luka4240" class="github" target="_blank"></a>
+        <a href="mailto:luke@lukehoward.me.uk" class="email" target="_blank"></a>
+        <a href="http://lukehoward.me.uk/blog/rss" class="rss" target="_blank"></a>
+    
+    </div></div>
     
 </footer>    
     

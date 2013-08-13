@@ -206,7 +206,15 @@ $(document).ready(function(){
     <div class="four columns"><p>&copy; Copyright 2013. Luke Howard.</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
     <div class="four columns"><p>&nbsp;</p></div>
-    <div class="four columns"><p>Website built by <a href="http://www.lukehoward.me.uk/about.php">Me</a> using <a href="http://www.lukehoward.me.uk/mooi">Mooi</a>.</p></div>
+    <div class="four columns"><div class="icons">
+        <a href="http://twitter.com/LukaHoward" class="twitter" target="_blank"></a>
+        <a href="http://www.linkedin.com/pub/luke-howard/a/673/59b" class="linkedin" target="_blank"></a>
+        <a href="http://pinterest.com/lucash85/" class="pinterest" target="_blank"></a>
+        <a href="https://github.com/Luka4240" class="github" target="_blank"></a>
+        <a href="mailto:luke@lukehoward.me.uk" class="email" target="_blank"></a>
+        <a href="http://lukehoward.me.uk/blog/rss" class="rss" target="_blank"></a>
+    
+    </div></div>
     
 </footer>    
     

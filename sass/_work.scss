@@ -6,19 +6,22 @@
     width:100%; 
     @include rem('height',170px); 
 }
-.fdw-background h4{
-    font-size:28px; 
-    color:#fff!important;
-    @include rem('margin',0 0 10px 0);
-    padding:40px 40px 0; 
-}
 .portfolio-item {
-    font-size:28px;
+    font-size:26px;
     @include rem('margin',0 0 10px 0);
     padding:40px 40px 0; 
 }
-.portfolio-item a:link {color:#fff;}
 
+.portfolio-item h4 a:link, .portfolio-item h4 a:active, .portfolio-item h4 a:visited {
+    font-size:26px; 
+    color:#fff;
+    @include rem('margin',0 0 10px 0);
+    padding:40px 40px 0; 
+}
+.portfolio-item h4 a:hover {
+    color:ffa800;
+    text-decoration:underline;
+}
 .disuk {
     background:url(../images/work/disuk.png);
 }
