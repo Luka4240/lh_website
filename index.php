@@ -26,6 +26,16 @@
 <link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
 <![endif]-->
     
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42895520-1', 'lukehoward.me.uk');
+  ga('send', 'pageview');
+
+</script>
     
 </head>
 
@@ -86,7 +96,7 @@
             <li><a href="http://lukehoward.me.uk/blog/2013/08/the-best-sass-mixin">The Best SASS Mixin</a></li>
             <li><a href="http://lukehoward.me.uk/blog/2013/08/getting-to-grips-with-version-control">Getting to grips with Version Control</a></li>
             <li><a href="http://lukehoward.me.uk/blog/2013/08/my-introduction-to-sass">My Introduction to SASS</a></li>
-            <li><a href="http://lukehoward.me.uk/blog/2013/08/why-i-think-designers-should-understand-web-technologies">Why I think designers should understand web technologiesM</a></li>
+            <li><a href="http://lukehoward.me.uk/blog/2013/08/why-i-think-designers-should-understand-web-technologies">Why I think designers should understand web technologies</a></li>
         </ul>
         
     </div>    

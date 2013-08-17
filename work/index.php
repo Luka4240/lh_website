@@ -44,7 +44,16 @@ jQuery(document).ready(function($){
 <![endif]-->
     
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-42895520-1', 'lukehoward.me.uk');
+  ga('send', 'pageview');
+
+</script>
     
 </head>
 
@@ -71,10 +80,10 @@ jQuery(document).ready(function($){
 </header>    
     
     
-<div class="row">
+<div class="row section">
     <div class="sixteen columns">
-        
-        
+        <h2>Websites</h2>
+            <p>These are some of the websites that I have completed over time, and currently maintain.</p>
         <div class="one-third column portfolio-item">
             <article class="disuk">
                 <div style="opacity:0;" class="fdw-background">
@@ -87,8 +96,8 @@ jQuery(document).ready(function($){
         <div class="one-third column portfolio-item">
             <article class="mooi">
                 <div style="opacity:0;" class="fdw-background">
-                    <h4><a href="http://www.disuk.com" target="_blank">DISUK Limited</a></h4>
-                    <a class="mooi-button mooi-button-primary" href="http://www.disuk.com">Open Project →</a>
+                    <h4><a href="http://www.lukehoward.me.uk/mooi" target="_blank">Mooi Framework</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.lukehoward.me.uk/mooi">Open Project →</a>
                 </div>
             </article>
         </div>
@@ -130,10 +139,30 @@ jQuery(document).ready(function($){
         </div>
         
         
+        
+        
     </div>
 </div>
     
-
+<div class="row">
+    <div class="sixteen columns">
+        <h2>Projects</h2>
+        <p>These are some of the projects and solutions that I have created for my own use, and have decided to share in the hope that one day someone will find use in them.</p>
+        <div class="one-third column portfolio-item">
+            <article class="mooi">
+                <div style="opacity:0;" class="fdw-background">
+                    <h4><a href="http://www.lukehoward.me.uk/mooi" target="_blank">Mooi Framework</a></h4>
+                    <a class="mooi-button mooi-button-primary" href="http://www.lukehoward.me.uk/mooi">Open Project →</a>
+                </div>
+            </article>
+            <p>Mooi is a free open source SASS framework, using a percentage based gird layout system, with Mooi you can get a website prototyped extremely quickly, allowing you to focus on the UX and UI of the site. Mooi is currently at its initial release, but is still being developed.</p>
+        </div>
+        
+    
+    </div>    
+    
+    
+</div>
 
     
     

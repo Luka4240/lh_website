@@ -30,7 +30,16 @@
 <!--[if lte IE 9]>
 <link href="stylesheets/ie_style.css" rel="stylesheet" type="text/css">
 <![endif]-->
-    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42895520-1', 'lukehoward.me.uk');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -61,8 +70,8 @@
     <div class="sixteen columns">
     <h2>About me</h2>
         <p class="about-intro1">I'm a multi-discipline web developer and designer from Northampton, UK.</p>
-        <p>I am happiest when I am challenge by a project. Whatever the project I am taking on I tend not to be phased by it, and I am willing to give anything a go and learn new skills to complete the project.</p>
-        <p>I love taking on a complex project, and making it easy to use for the user. I enjoy working on with new technologies and solutions, as well as developing solutions to any problem.</p>
+        <p>I am happiest when I am challenged by a project. Whatever the project I am taking on I tend not to be phased by it, and I am willing to give anything a go and learn new skills to complete the project.</p>
+        <p>I love taking on a complex project, and making it easy to use for the user. I enjoy working with new technologies and solutions, as well as developing solutions to any problem.</p>
         <p>If I'm not desigining or developing, I'm either down the gym, climbing or out enjoying some good food with friends and family, or there is a slim chance I could be cooking it!</p>
     </div>
 </div>
